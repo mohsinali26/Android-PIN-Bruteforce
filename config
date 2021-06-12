@@ -14,7 +14,7 @@ PIN_LENGTH=4
 
 # Timing
 ## DELAY_BETWEEN_KEYS is the period of time in seconds to wait after each key is sent
-DELAY_BETWEEN_KEYS=0.25
+DELAY_BETWEEN_KEYS=60
 
 ## The PROGRESSIVE_COOLDOWN_ARRAY variables act as multi-dimensional array to customise the progressive cooldown
 ## PROGRESSIVE_ARRAY_ATTEMPT_COUNT__________ is the attempt number
@@ -38,7 +38,7 @@ KEYS_AFTER_EACH_PIN="enter"
 DELAY_AFTER_KEYS_BEFORE_EACH_PIN=0.25
 
 ## KEYS_STAY_AWAKE_DURING_COOLDOWN the keys that are sent during the cooldown period to keep the phone awake
-KEYS_STAY_AWAKE_DURING_COOLDOWN="enter"
+KEYS_STAY_AWAKE_DURING_COOLDOWN="space"
 
 ## SEND_KEYS_STAY_AWAKE_DURING_COOLDOWN_EVERY_N_SECONDS how often the keys are sent, in seconds
 SEND_KEYS_STAY_AWAKE_DURING_COOLDOWN_EVERY_N_SECONDS=5
@@ -59,7 +59,7 @@ LOG=bruter.log
 
 # Exiting
 ## EXIT_AFTER_FAIL_COUNT controls when it will exit after reaching a threshold of errors when trying to send keys.
-EXIT_AFTER_FAIL_COUNT=15
+EXIT_AFTER_FAIL_COUNT=100
 
 # Operating System Environment
 KEYBOARD_DEVICE=/dev/hidg0
