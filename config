@@ -14,7 +14,7 @@ PIN_LENGTH=4
 
 # Timing
 ## DELAY_BETWEEN_KEYS is the period of time in seconds to wait after each key is sent
-DELAY_BETWEEN_KEYS=60
+DELAY_BETWEEN_KEYS=0.25
 
 ## The PROGRESSIVE_COOLDOWN_ARRAY variables act as multi-dimensional array to customise the progressive cooldown
 ## PROGRESSIVE_ARRAY_ATTEMPT_COUNT__________ is the attempt number
@@ -59,7 +59,7 @@ LOG=bruter.log
 
 # Exiting
 ## EXIT_AFTER_FAIL_COUNT controls when it will exit after reaching a threshold of errors when trying to send keys.
-EXIT_AFTER_FAIL_COUNT=100
+EXIT_AFTER_FAIL_COUNT=15
 
 # Operating System Environment
 KEYBOARD_DEVICE=/dev/hidg0
